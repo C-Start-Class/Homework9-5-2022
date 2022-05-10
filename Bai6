@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100];
+    char str_insert[100];
+    char str_result[100];
+    char str_tam[100];
+    printf("Nhap chuoi: ");
+    gets(str);
+    printf("Nhap chuoi can chen: ");
+    gets(str_insert);
+    int n;
+    int j = 0;
+    printf("Nhap vi tri can chen: ");
+    scanf("%d",&n);
+    for(int i = 0 ; i <n;i++){
+        str_result[i]=str[i];
+    }
+    strcat(str_result,str_insert);
+    for(int i = n;str[i];i++){
+        str_tam[j++]=str[i];
+    }
+    strcat(str_result,str_tam);
+    printf("%s",str_result);
+}
