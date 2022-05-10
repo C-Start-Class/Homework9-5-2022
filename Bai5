@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[100];
+    printf("Nhap chuoi: ");
+    gets(str);
+    int i,l;
+    printf("Nhap cac gia tri i va l:\ni = ");
+    scanf("%d",&i);
+    printf("l = ");
+    scanf("%d",&l);
+    for(int j = i; j <=l+1;j++){
+        printf("%c",str[j]);
+    }
+}
